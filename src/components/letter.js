@@ -42,11 +42,22 @@ class Letter extends Component {
     // }
     render() {
         const inputData = [
-            {title: 'Name', state: this.state.name, name: 'name'}
+            {title: 'Name', state: this.state.name, name: 'name'},
+            {title: 'Age', state: this.state.age, name: 'age'},
+            {title: 'City', state: this.state.city, name: 'city'},
+            {title: 'State', state: this.state.state, name: 'state'},
+            {title: 'HelpedFirst', state: this.state.helpedFirst, name: 'helpedFirst'},
+            {title: 'HelpedSecond', state: this.state.helpedSecond, name: 'helpedSecond'},
+            {title: 'HelpedThird', state: this.state.helpedThird, name: 'helpedThird'},
+            {title: 'HowGood', state: this.state.howGood, name: 'howGood'},
+            {title: 'HowHappy', state: this.state.howHappy, name: 'howHappy'},
+            {title: 'Gift1', state: this.state.gift1, name: 'gift1'},
+            {title: 'Gift2', state: this.state.gift2, name: 'gift2'},
+            {title: 'Gift3', state: this.state.gift3, name: 'gift3'},
         ]
         return (
             <div className="letter">
-                <div className="card__inputs">
+                <div className="letter__inputs">
                 {
                     inputData.map(data => Input( (data), this.handleInputChange ))
                 }
